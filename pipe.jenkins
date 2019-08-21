@@ -10,17 +10,15 @@ pipeline {
         echo "Hello World!"
       }
     }
-    stages {
-     stage('build1') {
-       steps {
-        input 'Ready to go?'
-       }
-     }
-    }
-     stage('build2') {
+    stage('build1') {
       steps {
-        echo "Hello World! 2"
+        input 'Ready to go?'
       }
+    }
+    stage('build2') {
+     steps {
+      echo "Hello World! 2"
      }
     }
    }
+  }
