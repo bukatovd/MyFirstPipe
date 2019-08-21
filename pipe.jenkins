@@ -1,13 +1,18 @@
 #!groovy
 // Hello World!
 pipeline {
-  agent { 
-    label 'master' 
-  } 
+  agent {
+    label 'master'
+  }
   stages {
-    stage('build') { 
+    stage('build') {
       steps {
         echo "Hello World!"
+      }
+    }
+    stage('build') {
+      steps {
+        echo "Hello 2 World!"
       }
     }
   }
