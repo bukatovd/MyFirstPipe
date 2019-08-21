@@ -16,6 +16,7 @@ pipeline {
         input 'Ready to go?'
        }
      }
+    }
      stage('build2') {
       steps {
         echo "Hello World! 2"
