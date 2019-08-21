@@ -4,16 +4,17 @@ pipeline {
   agent {
     label 'master'
   }
-  stages {
+   stages {
     stage('build') {
       steps {
         echo "Hello World!"
       }
     }
-    stage('build1') {
+    input 'Ready to go?'
+     stage('build1') {
       steps {
         echo "Hello World! 2"
       }
+     }
     }
-  }
-}
+   }
